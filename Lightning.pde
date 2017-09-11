@@ -4,14 +4,27 @@
 	int endy=0;
 void setup()
 {
-  background(0,0,0);
-  size(300,300);
+	background(0,0,0);
+  size(500,500);
   strokeWeight(6);
 }
 void draw()
 {
-	stroke(150,150,150);
-	while(x<300)
+
+	fill(30,200,50);
+	noStroke();
+	rect(00,450,500,450);
+
+
+}
+void mousePressed()
+{
+	int x=(int)(Math.random()*501);
+	int y=0;
+	int endx=(int)(Math.random()*501);
+	int endy=0;
+	stroke(220,220,80);
+	while(x<500)
 	{
 		endx=x+(int)(Math.random()*18-9);
 		endy=y+(int)(Math.random()*9);
@@ -20,14 +33,8 @@ void draw()
 		y=endy;
 
 	}
-}
-void mousePressed()
-{
+	
 
-	int x=0;
-	int y=150;
-	int endx=0;
-	int endy=150;
 
 }
 
